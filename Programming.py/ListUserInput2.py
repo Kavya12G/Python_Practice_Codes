@@ -1,4 +1,4 @@
-l1 = input('Enter space separated elements')
+l1 = input('Enter space separated elements ')
 print(l1, type(l1)) #2 4 5 <class 'str'>
 l1 = l1.split()
 print(l1) #['2', '4', '5']

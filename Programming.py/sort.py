@@ -8,3 +8,4 @@ l2 = [100,28,47,4]
 sorted_l2 = sorted(l2)
 print(sorted_l2)
 print(l2) #[100,28,47,4]
+

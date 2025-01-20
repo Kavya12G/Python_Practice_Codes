@@ -18,3 +18,8 @@ for num, count in d.items():
 # num, count = (10, 2)
 # num, count = (20, 1)
 # num, count = (30, 1)
+
+#packing-------------------------------------------------------
+name , *marks, age = ['Kavya', 29,45,54, 23]
+print(marks)
+print(age)
