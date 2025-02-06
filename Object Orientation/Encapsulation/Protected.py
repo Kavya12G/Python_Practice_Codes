@@ -1,6 +1,6 @@
 class Demo1:
     def __init__(self, name):
-        self._firstname = name
+        self._firstname = name #Protected variable
     def disp1(self):
         print(self._firstname)
 d1 = Demo1('Akash')
@@ -25,4 +25,7 @@ The Variable which are protected, can be accessed inside
 same class, outside of any class, inside the child class, 
 inside non-child class.
 
-The variable which are protected should be accessed inside '''
+The variable which are protected should be accessed inside 
+the same class and inside the child class and this is 
+programmers duty to follow these rules.
+'''
