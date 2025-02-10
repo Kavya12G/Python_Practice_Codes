@@ -4,12 +4,13 @@ import time
 def background_task():
     print(threading.current_thread())
     while True:
+        time.sleep(1)
         print("Background task running...")
-        time.sleep(2000)
+        
 
 thread =  threading.Thread(target = background_task, name = 'daemon')
 thread.daemon = True
 thread.start()
 
-time.sleep(1)
+time.sleep(3)
 print("Main program ends.")
