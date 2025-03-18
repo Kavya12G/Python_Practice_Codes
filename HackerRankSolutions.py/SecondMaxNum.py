@@ -6,3 +6,5 @@ if len(sorted_list) >= 3:
     print(sorted_list[2])
 else:
     print(sorted_list[0])
+
+
