@@ -9,3 +9,21 @@ print(s1)
 print(s2)
 print(s3)
 print(s4)
+
+
+# def find_pairs(nums, target):
+#     nums.sort()
+#     a = set()
+#     res = set()
+
+#     for num in nums:
+#         b = target - num
+#         if b in a:
+#             res.add(tuple(sorted((num, b))))
+#         a.add(num)
+
+#     return [list(pair) for pair in res]
+
+# nums = [1,1,2,2,3,3]
+# target = 5
+# print(find_pairs(nums, target))
