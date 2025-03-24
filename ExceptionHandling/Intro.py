@@ -1,6 +1,6 @@
-#try: Used to keep the logic in which we ,ay get some error.
-#except: will be executed ehen exception occurres in try block logic
-#else: will be executed when try block logiv executed without any error.
+#try: Used to keep the logic in which we, may get some error.
+#except: will be executed when exception occurres in try block logic
+#else: will be executed when try block logic executed without any error.
 #finally: will alwalys executed irrespective of exception occurred or not
 
 def disp(a,b):
@@ -8,7 +8,7 @@ def disp(a,b):
         print('Task Started')
         print(a/b) #ZeroDivisorError
     except:
-        print('Some erro Handled')
+        print('Some error Handled')
     else:
         print('Task executed without any exception')
     finally:
