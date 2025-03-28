@@ -30,16 +30,18 @@
 #     print("no, are not anagrams")
 
 #First non-repeating character
-from collections import Counter
-s = input()
-s1 = ""
-char_count = Counter(s)
-for char in s:
-    if char_count[char] == 1:
-        print(s1 + char)
-        break
-else:
-        print("-1")
+# from collections import Counter
+# s = input()
+# s1 = ""
+# char_count = Counter(s)
+# for char in s:
+#     if char_count[char] == 1:
+#         print(s1 + char)
+#         break
+# else:
+#         print("-1")
+
+#
 
 
     
