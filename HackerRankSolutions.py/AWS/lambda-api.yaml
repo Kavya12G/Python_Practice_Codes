@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  MyLambdaFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: MyLambdaFunction
+      Runtime: python3.12
+      Handler: index.lambda_handler
+      Code:
+        ZipFile: |
+          def lambda_handler(event, context):
+              return {
+                  'statusCode': 200,
+                  'body': 'Hello from Lambda via CloudFormation!'
+              }
+      Role: arn:aws:iam::910285511846:role/service-role/my-function-role-e9573e31
+
+  ApiGateway:
+    Type: AWS::ApiGatewayV2::Api
+    Properties:
+      Name: LambdaHttpApi
+      ProtocolType: HTTP
+      Target: !GetAtt MyLambdaFunction.Arn
